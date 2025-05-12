@@ -1,0 +1,9 @@
+---
+# file: ping-test.yml
+- name: Test di connettività SSH con Ansible
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Ping test
+      ping:
